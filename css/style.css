@@ -27,9 +27,9 @@ ul {
 }
 
 /* End reset*/
-header {
-    /* background: green; */
-}
+ /*header {
+    background: green; 
+}*/
 
 #sub-header-1 {
     display: grid;
@@ -49,15 +49,22 @@ header {
         justify-content: center;
         /* background: yellow; */
     }
+    /*
     #sub-header-1 nav {
         /* display: inline-block; */
-        /* background: aqua; */
-    }
+        /* background: aqua; 
+    }*/
     #sub-header-1 nav:last-child ul {
         /* background: pink; */
         justify-content: flex-end;
     }
-    #sub-header-1 ul li {
+    #sub-header-1 ul li a{
+        padding: 5px 10px;
+        border: 2px solid rgb(255, 255, 255);
+    }
+    #sub-header-1 ul li a:hover{
+        border: 2px solid #287BE0;
+        border-radius: 4px;
         /* background: green; */
     }
 
@@ -86,10 +93,13 @@ header {
     cursor:pointer;
 
 }
-
+#hero button {
+    border: 5px solid transparent;
+}
 #hero button:hover {
     background-color: #fff;
     color: #17467E;
+    border: 5px solid red;
 }
 #hero video {
     position: absolute;
@@ -117,4 +127,50 @@ header {
     background: rgba(0,0,0,.5);
     flex:1;
     width: 100%;
+}
+#services {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   /* border: 2px dotted coral;
+    /*overflow: hidden;*/
+    
+   
+}
+#services article{
+    overflow: hidden;
+
+}
+#services article figure{
+    height: 150px;
+    overflow: hidden;
+
+}
+#services footer{
+    text-align: right;
+    margin-top: 30px;
+    grid-column: span 3;
+}
+
+#services footer a{
+    padding: 10px 20px;
+    background-color: crimson;
+    border: 2px solid black;
+    color: rgba(0,0,0);
+    
+}
+#services footer a:hover{
+    background-color: red;
+    border-radius: 10px;
+
+}
+#services h1{
+    background-color: coral;
+    grid-column: span 3;
+    /*text-decoration: underline;*/
 }
