@@ -174,3 +174,20 @@ ul {
     grid-column: span 3;
     /*text-decoration: underline;*/
 }
+#main-footer{
+    background-color: rgb(61, 59, 59);
+}
+#main-footer section{
+    width: 960px;
+    margin: 0 auto;
+}
+#footer-section-1,
+ #copyright-section
+ {
+     display: flex;
+     gap: 50px;
+     padding: 50px 0;
+ }
+ #footer-section-1{
+     padding-bottom:0;
+ }
